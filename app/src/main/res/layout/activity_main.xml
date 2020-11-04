@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/transparentbg"
+
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/firstReminder"
+        >
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressEDnotwork"
+        android:padding="16dp"
+        android:hint="Search Places"
+        android:drawablePadding="16dp"
+        android:drawableLeft="@drawable/ic_edit_location"
+        android:gravity="center_vertical"
+        android:background="@android:drawable/editbox_background"
+
+        >
+
+    </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressED1"
+            android:padding="16dp"
+            android:hint="Enter Address"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_edit_location"
+            android:gravity="center_vertical"
+            android:background="@android:drawable/editbox_background"
+
+            >
+
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal"
+
+
+            >
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/locality1"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="2"
+                android:hint="Locality"
+                android:textSize="12dp"
+                >
+
+            </EditText>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/latlng1"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="3"
+                android:hint="LatLng "
+                android:textSize="12dp"
+
+
+                >
+
+            </EditText>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notesED1"
+            android:padding="16dp"
+            android:hint="Enter Notes"
+            android:drawablePadding="16dp"
+            android:minLines="3"
+            android:gravity="start"
+            android:drawableStart="@drawable/ic_note"
+
+
+            android:background="@android:drawable/editbox_background"
+
+            >
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET Time and Date"
+            android:drawableLeft="@drawable/ic_date"
+            android:id="@+id/buttonSETtime"
+            android:padding="16dp"
+            android:background="@drawable/pearlbt"
+            android:layout_margin="10dp"
+
+            >
+
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET Reminder"
+            android:id="@+id/buttonSETreminder"
+            android:layout_below="@+id/buttonSETtime"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pearlbt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="16dp"
+
+
+            >
+
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Reminder"
+            android:id="@+id/buttonCancelTdate"
+            android:layout_below="@+id/buttonSETreminder"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparentbgred"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="16dp"
+            android:visibility="gone"
+
+            >
+
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:text="time"
+        android:gravity="center"
+        android:id="@+id/tvTime"
+        android:visibility="gone"
+        >
+
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvTime"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:text="date"
+        android:gravity="center"
+        android:id="@+id/tvDate"
+        android:visibility="gone"
+        >
+
+
+    </TextView>
+
+
+
+</RelativeLayout>
