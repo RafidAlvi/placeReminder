@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         locallity1 = findViewById(R.id.locality1);
         notes1 = findViewById(R.id.notesED1);
 
-        Places.initialize(getApplicationContext(),"AIzaSyAK57O0mo6eE4sCs4Gr1I2kdw8xJpv96jU");
+        Places.initialize(getApplicationContext(),"Add your API key here and enable Geolocating and Geocoding ");
 
 
         searchED.setFocusable(false);
